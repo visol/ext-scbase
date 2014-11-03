@@ -11,7 +11,7 @@ PATH {
 	publicPath = {$PATH.relExtPath}Resources/Public/
 
 	# cat=filepaths; type=string; label=CSS folder path
-	stylesheets = {$PATH.publicPath}StyleSheets/
+	stylesheets = {$PATH.publicPath}Stylesheets/
 
 	# cat=filepaths; type=string; label=Images folder path
 	images = {$PATH.publicPath}Images/
