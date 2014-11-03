@@ -2,6 +2,20 @@ page = PAGE
 page {
 	typeNum = 0
 
+	includeCSS {
+		stylesheets = {$PATH.stylesheets}Build/styles{$PATH.productionMinifiedPostfix}.css
+		stylesheets.media = all
+	}
+
+	includeJSlibs {
+		headScripts = {$PATH.scripts}Build/headScripts{$PATH.productionMinifiedPostfix}.js
+	}
+
+	includeJSFooterlibs {
+		bodyScripts = {$PATH.scripts}Build/bodyScripts{$PATH.productionMinifiedPostfix}.js
+	}
+
+
 	bodyTagCObject = COA
 	bodyTagCObject {
 		wrap = <body|>

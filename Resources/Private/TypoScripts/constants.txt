@@ -18,6 +18,8 @@ PATH {
 
 	# cat=filepaths; type=string; label=Scripts folder path
 	scripts = {$PATH.publicPath}Scripts/
+
+	productionMinifiedPostfix = .min
 }
 
 PID {
