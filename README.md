@@ -24,12 +24,15 @@ Folder structure
       Libraries (in `Vendor/Libs`) will be included first.
       * `./Resources/Private/BodyScripts/Vendor`
         * `./Resources/Private/BodyScripts/Vendor/Libs`
+    * `./Resources/Private/Content` 
+      Dumps (e.g. T3D files)
     * `./Resources/Private/HeadScripts`  
       JavaScripts that should be inserted in the body of the HTML document (right before the closing body tag).
       These scripts will be merged and compressed by e.g. Grunt and stored in `./Resources/Public/Scripts/Build/headScripts.min.js`
       Libraries (in `Vendor/Libs`) will be included first.
       * `./Resources/Private/HeadScripts/Vendor`
         * `./Resources/Private/HeadScripts/Vendor/Libs`
+    * `./Resources/Private/Language`
     * `./Resources/Private/Layouts`
     * `./Resources/Private/Partials`
     * `./Resources/Private/Stylesheets`
