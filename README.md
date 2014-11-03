@@ -51,3 +51,8 @@ Folder structure
 * `./Shell`
 * `./Tests`
 
+Installation:
+
+- User TSConfig
+  * for admin users: add <INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TSConfig/UserTSConfig/Library/adminTS.ts"> to the user or the group
+  * for standard users: add <INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TSConfig/UserTSConfig/Library/userTS.ts"> to the user or the group

@@ -1,0 +1,82 @@
+extName = scbase
+
+PATH {
+	# cat=relExtPath; type=string; label=Relative extension path
+	relExtPath = typo3conf/ext/{$extName}/
+
+	# cat=privatePath; type=string; label=Resources Private Folder path
+	privatePath = {$PATH.relExtPath}Resources/Private/
+
+	# cat=publicPath; type=string; label=Resources Public Folder path
+	publicPath = {$PATH.relExtPath}Resources/Public/
+
+	# cat=filepaths; type=string; label=CSS folder path
+	stylesheets = {$PATH.publicPath}StyleSheets/
+
+	# cat=filepaths; type=string; label=Images folder path
+	images = {$PATH.publicPath}Images/
+
+	# cat=filepaths; type=string; label=Scripts folder path
+	scripts = {$PATH.publicPath}Scripts/
+}
+
+PID {
+	// homepage pid (also rootpage)
+	homepage =
+	contact =
+	sitemap =
+	menu {
+		header =
+		footer =
+	}
+}
+
+styles.content {
+	# This defines the maximum width of images inserted in content records of type Images or Text-with-images.
+	# There are seperate settings for images floated next to text (..InText)
+	imgtext {
+		maxW = 651
+		maxWInText = 651
+		borderThick = 1
+	}
+}
+
+content {
+	pageFrameObj =
+	defaultHeaderType = 3
+}
+
+site {
+	page {
+		configuration {
+			adminPanel = 0
+			debug = 0
+		}
+	}
+
+	# Initialize empty subpageLogo constants
+	subpageLogoName =
+	subpageLogoDescription =
+	subpageLogoTypolinkParameter =
+}
+
+# Load the extension template or
+# Add the following uncommented line, to the root sys_template Constants or load the script in the include template
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TypoScript/constants.ts">
+
+# Languages
+site.sys_language_uid = 0
+<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Languages/constants_DE.ts">
+
+[globalVar = GP:L = 1]
+    site.sys_language_uid = 1
+    <INCLUDE_TYPOSCRIPT: source="FILE:./Library/Languages/constants_FR.ts">
+[global]
+
+[globalVar = GP:L = 2]
+    site.sys_language_uid = 2
+    <INCLUDE_TYPOSCRIPT: source="FILE:./Library/Languages/constants_EN.ts">
+[global]
+
+<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Page/constants.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Page/Config/constants.ts">
