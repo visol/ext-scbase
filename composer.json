@@ -1,0 +1,17 @@
+{
+	"name": "sinso/scbase",
+	"type": "typo3-cms-extension",
+	"description": "",
+	"homepage": "https://github.com/sinso/ext-scbase",
+	"license": ["GPL-2.0+"],
+	"keywords": ["TYPO3 CMS"],
+	"support": {
+		"issues": "https://github.com/sinso/ext-scbase/issues"
+	},
+	"version": "0.0.1",
+	"require": {
+		"typo3/cms": "~6.2",
+		"typo3-ter/realurl": "~1.12",
+		"typo3-ter/caretaker_instance": "~0.5"
+	}
+}
