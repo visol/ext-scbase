@@ -2,9 +2,18 @@ page {
 	meta {
 		viewport = width=device-width, initial-scale=1, maximum-scale=1
 
-		keywords.field = keywords
-		description.field = description
-		author.field = author
+		keywords {
+			field = keywords
+			required = 1
+		}
+		description {
+			field = description
+			required = 1
+		}
+		author {
+			field = author
+			required = 1
+		}
 
 		application-name = {$site.meta.application-name}
 		msapplication-TileColor = {$site.meta.msapplication-TileColor}

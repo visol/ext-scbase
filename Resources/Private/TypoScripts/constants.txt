@@ -67,14 +67,9 @@ site {
 	}
 
 	logo {
-		bitmap = {$PATH.images}logo.gif
+		bitmap = {$PATH.images}logo.png
 		vector = {$PATH.images}logo.svg
 	}
-
-	# Initialize empty subpageLogo constants
-	subpageLogoName =
-	subpageLogoDescription =
-	subpageLogoTypolinkParameter =
 }
 
 # Load the extension template or
