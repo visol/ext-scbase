@@ -37,8 +37,8 @@ styles.content {
 	# This defines the maximum width of images inserted in content records of type Images or Text-with-images.
 	# There are seperate settings for images floated next to text (..InText)
 	imgtext {
-		maxW = 651
-		maxWInText = 651
+		maxW = 1000
+		maxWInText = 1000
 		borderThick = 1
 	}
 }
@@ -56,6 +56,21 @@ site {
 		}
 	}
 
+	baseUrl = http://scsite.dev
+	domain = scsite.dev
+
+	meta{
+		og_type = website
+		application-name =
+		msapplication-TileColor =
+		msapplication-TileImage =
+	}
+
+	logo {
+		bitmap = {$PATH.images}logo.gif
+		vector = {$PATH.images}logo.svg
+	}
+
 	# Initialize empty subpageLogo constants
 	subpageLogoName =
 	subpageLogoDescription =
@@ -68,17 +83,17 @@ site {
 
 # Languages
 site.sys_language_uid = 0
-<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Languages/constants_DE.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TypoScripts/Library/Languages/constants_DE.ts">
 
 [globalVar = GP:L = 1]
-    site.sys_language_uid = 1
-    <INCLUDE_TYPOSCRIPT: source="FILE:./Library/Languages/constants_FR.ts">
+	site.sys_language_uid = 1
+	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TypoScripts/Library/Languages/constants_FR.ts">
 [global]
 
 [globalVar = GP:L = 2]
-    site.sys_language_uid = 2
-    <INCLUDE_TYPOSCRIPT: source="FILE:./Library/Languages/constants_EN.ts">
+	site.sys_language_uid = 2
+	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TypoScripts/Library/Languages/constants_EN.ts">
 [global]
 
-<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Page/constants.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Page/Config/constants.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TypoScripts/Library/Page/constants.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TypoScripts/Library/Page/Config/constants.ts">
