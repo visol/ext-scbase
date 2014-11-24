@@ -52,11 +52,17 @@ site {
 		application-name =
 		msapplication-TileColor =
 		msapplication-TileImage =
+		msapplication-navbutton-color =
 	}
 
 	logo {
 		bitmap = {$PATH.images}logo.png
 		vector = {$PATH.images}logo.svg
+	}
+	favicon {
+		icon = {$PATH.images}favicon.ico
+		bitmap = {$PATH.images}favicon.png
+		vector = {$PATH.images}favicon.svg
 	}
 
 	id {
@@ -70,16 +76,25 @@ site {
 # <INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TypoScript/constants.ts">
 
 # Languages
-site.sys_language_uid = 0
+site {
+	sys_language_uid = 0
+	browserTitle = scbase Lang0
+}
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TypoScripts/Library/Languages/constants_DE.ts">
 
 [globalVar = GP:L = 1]
-	site.sys_language_uid = 1
+	site {
+		sys_language_uid = 1
+		browserTitle = scbase Lang1
+	}
 	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TypoScripts/Library/Languages/constants_FR.ts">
 [global]
 
 [globalVar = GP:L = 2]
-	site.sys_language_uid = 2
+	site {
+		sys_language_uid = 2
+		browserTitle = scbase Lang2
+	}
 	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TypoScripts/Library/Languages/constants_EN.ts">
 [global]
 

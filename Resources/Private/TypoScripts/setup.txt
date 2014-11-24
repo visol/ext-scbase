@@ -11,5 +11,6 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:./Library/Page/setup.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Library/Page/Config/setup.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Library/Page/Meta/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Page/HeaderData/setup.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Library/System/CssStyledContent/setup.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Library/Menu/AccessKeys/setup.ts">
