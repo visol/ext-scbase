@@ -21,6 +21,9 @@ PATH {
 	# cat=filepaths; type=string; label=Scripts folder path
 	scripts = {$PATH.publicPath}Scripts/
 
+	# cat=filepaths; type=string; label=Translation file
+	translationFile = {$PATH.privatePath}Language/locallang.xml
+
 	productionMinifiedPostfix = .min
 }
 
@@ -29,25 +32,11 @@ PID {
 	homepage =
 	contact =
 	sitemap =
+	search =
 	menu {
 		header =
 		footer =
 	}
-}
-
-styles.content {
-	# This defines the maximum width of images inserted in content records of type Images or Text-with-images.
-	# There are seperate settings for images floated next to text (..InText)
-	imgtext {
-		maxW = 1000
-		maxWInText = 1000
-		borderThick = 1
-	}
-}
-
-content {
-	pageFrameObj =
-	defaultHeaderType = 3
 }
 
 site {
@@ -61,7 +50,7 @@ site {
 	baseUrl = http://scsite.dev
 	domain = scsite.dev
 
-	meta{
+	meta {
 		og_type = website
 		application-name =
 		msapplication-TileColor =
@@ -71,6 +60,11 @@ site {
 	logo {
 		bitmap = {$PATH.images}logo.png
 		vector = {$PATH.images}logo.svg
+	}
+
+	id {
+		mainNavigation = mainNavigation
+		mainContent = mainContent
 	}
 }
 
@@ -91,6 +85,21 @@ site.sys_language_uid = 0
 	site.sys_language_uid = 2
 	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TypoScripts/Library/Languages/constants_EN.ts">
 [global]
+
+styles.content {
+	# This defines the maximum width of images inserted in content records of type Images or Text-with-images.
+	# There are seperate settings for images floated next to text (..InText)
+	imgtext {
+		maxW = 1000
+		maxWInText = 1000
+		borderThick = 1
+	}
+}
+
+content {
+	pageFrameObj =
+	defaultHeaderType = 3
+}
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TypoScripts/Library/Page/constants.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:scbase/Resources/Private/TypoScripts/Library/Page/Config/constants.ts">

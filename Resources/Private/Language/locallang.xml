@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the dh_base extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">	
+			<label index="pageElement.navAccesskey.accesskey0">Homepage</label>
+			<label index="pageElement.navAccesskey.accesskey1">Main navigation</label>
+			<label index="pageElement.navAccesskey.accesskey2">Main content</label>
+			<label index="pageElement.navAccesskey.accesskey3">Contact page</label>
+			<label index="pageElement.navAccesskey.accesskey4">Sitemap page</label>
+			<label index="pageElement.navAccesskey.accesskey5">Search page</label>
+			<label index="pageElement.navSearch.searchNavLegend">Search Engine</label>
+			<label index="pageElement.navSearch.searchNavLabel">Search</label>
+			<label index="pageElement.navSearch.searchNavSubmit">Submit</label>
+			<label index="pageElement.printLabel">print</label>
+			<label index="pageElement.footer.copyright">Copyright</label>
+			<label index="pageElement.social.text">Share</label>
+			<label index="pageElement.news.backToList">Back to list</label>
+			<label index="pageElement.login">login</label>
+			<label index="pageElement.login.hello">Hi</label>
+			<label index="pageElement.logout">logout</label>
+			<label index="gridElements.col2.title">Two columns</label>
+			<label index="gridElements.col2.description">(Responsive with Bootstrap3)</label>
+			<label index="gridElements.col3.title">Three columns</label>
+			<label index="gridElements.col3.description">(Responsive with Bootstrap3)</label>
+			<label index="gridElements.col4.title">Four columns</label>
+			<label index="gridElements.col4.description">(Responsive with Bootstrap3)</label>
+			<label index="gridElements.column1.name">Column 1</label>
+			<label index="gridElements.column2.name">Column 2</label>
+			<label index="gridElements.column3.name">Column 3</label>
+			<label index="gridElements.column4.name">Column 4</label>
+			<label index="beLayout.1.title">Homepage</label>
+			<label index="beLayout.1.description">Homepage template</label>
+			<label index="beLayout.2.title">Pages</label>
+			<label index="beLayout.2.description">Pages template</label>
+			<label index="beLayout.column.main">main content</label>
+			<label index="beLayout.column.left">left content</label>
+			<label index="beLayout.column.right">right content</label>
+			<label index="beLayout.column.top">top content</label>
+		</languageKey>
+		<languageKey index="fr" type="array">	
+			<label index="pageElement.navAccesskey.accesskey0">Page d'accueil</label>
+			<label index="pageElement.navAccesskey.accesskey1">Navigation principale</label>
+			<label index="pageElement.navAccesskey.accesskey2">Contenu principale</label>
+			<label index="pageElement.navAccesskey.accesskey3">Page de contact</label>
+			<label index="pageElement.navAccesskey.accesskey4">Plan du site</label>
+			<label index="pageElement.navAccesskey.accesskey5">Page de recherche</label>
+			<label index="pageElement.navSearch.searchNavLegend">Moteur de recherche</label>
+			<label index="pageElement.navSearch.searchNavLabel">Recherche</label>
+			<label index="pageElement.navSearch.searchNavSubmit">Soumettre</label>
+			<label index="pageElement.printLabel">Imprimer</label>
+			<label index="pageElement.footer.copyright">Copyright</label>
+			<label index="pageElement.social.text">Partager</label>
+			<label index="pageElement.news.backToList">Retour à la liste</label>
+			<label index="pageElement.login">Connexion</label>
+			<label index="pageElement.login.hello">Bonjour</label>
+			<label index="pageElement.logout">Déconnexion</label>
+			<label index="gridElements.col2.title">Deux colonnes</label>
+			<label index="gridElements.col2.description">(Responsive avec Bootstrap3)</label>
+			<label index="gridElements.col3.title">Trois colonnes</label>
+			<label index="gridElements.col3.description">(Responsive avec Bootstrap3)</label>
+			<label index="gridElements.col4.title">Quatre colonnes</label>
+			<label index="gridElements.col4.description">(Responsive avec Bootstrap3)</label>
+			<label index="gridElements.column1.name">Colonne 1</label>
+			<label index="gridElements.column2.name">Colonne 2</label>
+			<label index="gridElements.column3.name">Colonne 3</label>
+			<label index="gridElements.column4.name">Colonne 4</label>
+			<label index="beLayout.1.title">Accueil</label>
+			<label index="beLayout.1.description">Template d'accueil</label>
+			<label index="beLayout.2.title">Pages</label>
+			<label index="beLayout.2.description">Template de pages</label>
+			<label index="beLayout.column.main">Contenu principal</label>
+			<label index="beLayout.column.left">Contenu gauche</label>
+			<label index="beLayout.column.right">Contenu droite</label>
+			<label index="beLayout.column.top">Contenu du haut</label>
+		</languageKey>
+		<languageKey index="de" type="array">	
+			<label index="pageElement.navAccesskey.accesskey0">Homepage</label>
+			<label index="pageElement.navAccesskey.accesskey1">Top Navigation</label>
+			<label index="pageElement.navAccesskey.accesskey2">Zum Inhalt</label>
+			<label index="pageElement.navAccesskey.accesskey3">Kontakt Seite</label>
+			<label index="pageElement.navAccesskey.accesskey4">Sitemap</label>
+			<label index="pageElement.navAccesskey.accesskey5">Such Seite</label>
+			<label index="pageElement.navSearch.searchNavLegend">Such System</label>
+			<label index="pageElement.navSearch.searchNavLabel">Suchen</label>
+			<label index="pageElement.navSearch.searchNavSubmit">Senden</label>
+			<label index="pageElement.printLabel">Drucken</label>
+			<label index="pageElement.footer.copyright">Copyright</label>
+			<label index="pageElement.social.text">Teilen</label>
+			<label index="pageElement.news.backToList">Zurück zur Liste</label>
+			<label index="pageElement.login">Einloggen</label>
+			<label index="pageElement.login.hello">Hallo</label>
+			<label index="pageElement.logout">Ausloggen</label>
+			<label index="gridElements.col2.title">Zwei Spalten</label>
+			<label index="gridElements.col2.description">(Responsive mit Bootstrap3)</label>
+			<label index="gridElements.col3.title">Drei Spalten</label>
+			<label index="gridElements.col3.description">(Responsive mit Bootstrap3)</label>
+			<label index="gridElements.col4.title">Vier Spalten</label>
+			<label index="gridElements.col4.description">(Responsive mit Bootstrap3)</label>
+			<label index="gridElements.column1.name">Spalte 1</label>
+			<label index="gridElements.column2.name">Spalte 2</label>
+			<label index="gridElements.column3.name">Spalte 3</label>
+			<label index="gridElements.column4.name">Spalte 4</label>
+			<label index="beLayout.1.title">Homepage</label>
+			<label index="beLayout.1.description">Homepage Template</label>
+			<label index="beLayout.2.title">Seiten</label>
+			<label index="beLayout.2.description">Seiten Template</label>
+			<label index="beLayout.column.main">Haupt Inhalt</label>
+			<label index="beLayout.column.left">Linker Inhalt</label>
+			<label index="beLayout.column.right">Rechter Inhalt</label>
+			<label index="beLayout.column.top">Top Inhalt</label>
+		</languageKey>
+	</data>
+</T3locallang>
