@@ -73,6 +73,16 @@ page {
 		variables {
 		#cObjects werden direkt im Template mittels <f:cObject typoscriptObjectPath="lib.*" /> eingebunden
 
+			mainNavigation = TEXT
+			mainNavigation.value = {$site.id.mainNavigation}
+
+			mainContent = TEXT
+			mainContent.value = {$site.id.mainContent}
+
+			belayout = TEXT
+			belayout.data = levelfield:-1,backend_layout_next_level,slide
+			belayout.override.field = backend_layout
+
 			homeLinkUri = TEXT
 			homeLinkUri.typolink.parameter = {$PID.homepage}
 			homeLinkUri.typolink.returnLast = url

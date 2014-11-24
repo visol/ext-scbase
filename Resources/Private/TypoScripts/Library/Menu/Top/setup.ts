@@ -27,7 +27,7 @@ lib.scbase.menu.top {
 	#4 < lib.scbase.menu.top.1
 }
 
-[globalVar = TSFE:id = 1]
+[globalVar = TSFE:id = {$PID.homepage}]
 lib.scbase.menu.top {
 	# PID 6 is a shortcut to home, show it as active
 	alwaysActivePIDlist = 6
