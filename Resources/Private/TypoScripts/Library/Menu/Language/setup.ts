@@ -1,33 +1,37 @@
-lib.scbase.menu.language < lib.scbase.menu.template
+lib.scbase.menu.language = HMENU
 lib.scbase.menu.language {
-
 	special = language
-	special.value = 0,1
-
+	special {
+		value = {$site.menu.language.ids}
+		normalWhenNoLanguage = 0
+	}
+	addQueryString = 1
+	addQueryString.exclude = L,id,no_cache
+	addQueryString.method = GET
+	useCacheHash = 1
+	1 = TMENU
 	1 {
-
+		stdWrap.wrap = <ul>|</ul>
+		stdWrap.required = 1
 		NO = 1
 		NO {
-			# Override the standard menu item value (which is the page title) with our own cObject
-			stdWrap.cObject = TEXT
-
-			# Use the TypoScript option split function to display different values for the first and second item
-			stdWrap.cObject.value = DE || EN
+			wrapItemAndSub >
+			allWrap = <li class="first">|</li>|*|<li>|</li>|*|<li class="last">|</li>
+			stdWrap.override = {$site.menu.language.labels}
+			ATagTitle = {$site.menu.language.linkTitleLabels}
 		}
-
-		CUR < .NO
-		CUR.doNotShowLink = 1
-		CUR.wrapItemAndSub >
-
 		ACT < .NO
-		ACT.doNotShowLink = 1
-		ACT.wrapItemAndSub >
-
-		USERDEF1 = 1
-		USERDEF1.doNotShowLink = 1
-		USERDEF1.wrapItemAndSub >
-
+		ACT {
+			#allWrap = <li class="first act">|</li>|*|<li class="act">|</li>|*|<li class="last act">|</li>
+			doNotShowLink = 1
+			allWrap >
+		}
+		USERDEF1 < .NO
+		USERDEF1 {
+			#doNotLinkIt = 1
+			doNotShowLink = 1
+			allWrap >
+		}
 		USERDEF2 < .USERDEF1
 	}
-
 }

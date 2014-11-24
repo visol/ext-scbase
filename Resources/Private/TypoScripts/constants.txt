@@ -64,7 +64,6 @@ site {
 		bitmap = {$PATH.images}favicon.png
 		vector = {$PATH.images}favicon.svg
 	}
-
 	id {
 		mainNavigation = mainNavigation
 		mainContent = mainContent
@@ -77,6 +76,12 @@ site {
 
 # Languages
 site {
+	menu.language {
+		ids = 0, 1, 2
+		labels = DE || FR || EN
+		linkTitleLabels = Deutsch || Français || English
+	}
+
 	sys_language_uid = 0
 	browserTitle = scbase Lang0
 }
