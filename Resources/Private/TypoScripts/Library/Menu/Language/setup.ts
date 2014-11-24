@@ -22,15 +22,15 @@ lib.scbase.menu.language {
 		}
 		ACT < .NO
 		ACT {
-			#allWrap = <li class="first act">|</li>|*|<li class="act">|</li>|*|<li class="last act">|</li>
-			doNotShowLink = 1
-			allWrap >
+			allWrap = <li class="first active">|</li>|*|<li class="active">|</li>|*|<li class="last active">|</li>
+			#doNotShowLink = 1
+			#allWrap >
 		}
 		USERDEF1 < .NO
 		USERDEF1 {
-			#doNotLinkIt = 1
-			doNotShowLink = 1
-			allWrap >
+			doNotLinkIt = 1
+			#doNotShowLink = 1
+			#allWrap >
 		}
 		USERDEF2 < .USERDEF1
 	}
