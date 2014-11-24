@@ -21,9 +21,6 @@ PATH {
 	# cat=filepaths; type=string; label=Scripts folder path
 	scripts = {$PATH.publicPath}Scripts/
 
-	# cat=filepaths; type=string; label=Translation file
-	translationFile = {$PATH.privatePath}Language/locallang.xml
-
 	productionMinifiedPostfix = .min
 }
 
