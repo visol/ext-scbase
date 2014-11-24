@@ -1,3 +1,13 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Menu/Template/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Menu/Breadcrumb/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Menu/Footer/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Menu/Language/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Menu/Meta/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Menu/Quick/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Menu/Sub/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Library/Menu/Top/setup.ts">
+
+
 <INCLUDE_TYPOSCRIPT: source="FILE:./Library/Page/setup.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Library/Page/Config/setup.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Library/Page/Meta/setup.ts">
