@@ -8,50 +8,48 @@
 
 lib.scbase.menu.template = HMENU
 lib.scbase.menu.template {
-# Also show pages which have not-in-menu flag set in page properties
-    includeNotInMenu = 0
+	# Also show pages which have not-in-menu flag set in page properties
+	includeNotInMenu = 0
 
-
-
-    1 = TMENU
-    1 {
-        wrap = <ul>|</ul>
+	1 = TMENU
+	1 {
+		wrap = <ul>|</ul>
 
 		# Always unfold all sub-levels of the menu
-        expAll = 1
+		expAll = 1
 
 		# Define the normal state (not active, not selected) of menu items
 		# Using NO=1 to activate normal state is not necessary, but useful when copying
-        NO = 1
-        NO {
-        # Use the page title field the title property on the A-tag, but only if the navigation title is set
-            ATagTitle {
-                field = title
-                fieldRequired = nav_title
-            }
+		NO = 1
+		NO {
+			# Use the page title field the title property on the A-tag, but only if the navigation title is set
+			ATagTitle {
+				field = title
+				fieldRequired = nav_title
+			}
 
 			# Use the option-split feature to generate a different wrap for the last item on a level of the menu
 			# The last item on each level gets class="last" added for CSS styling purposes.
 			#
-        # See the TSref documentation for details about option split and other features:
-                # http://typo3.org/documentation/document-library/references/doc_core_tsref/current/
-                wrapItemAndSub = <li>|</li> |*| <li>|</li> |*| <li class="last">|</li>
+			# See the TSref documentation for details about option split and other features:
+			# http://typo3.org/documentation/document-library/references/doc_core_tsref/current/
+			wrapItemAndSub = <li>|</li> |*| <li>|</li> |*| <li class="last">|</li>
 
 			# HTML-encode special characters according to the PHP-function htmlSpecialChars
-            stdWrap.htmlSpecialChars = 1
-        }
+			stdWrap.htmlSpecialChars = 1
+		}
 
 		# Copy properties of normal to active state, and then add a CSS class for styling
-            ACT < .NO
-        ACT {
-            wrapItemAndSub = <li class="active">|</li> |*| <li class="active">|</li> |*| <li class="active last">|</li>
-        }
+		ACT < .NO
+		ACT {
+			wrapItemAndSub = <li class="active">|</li> |*| <li class="active">|</li> |*| <li class="active last">|</li>
+		}
 
 		# Copy properties of normal to current state, and then add a CSS class for styling
-            CUR < .NO
-        CUR {
-            wrapItemAndSub = <li class="selected">|</li> |*| <li class="selected">|</li> |*| <li class="selected last">|</li>
-        }
+		CUR < .NO
+		CUR {
+			wrapItemAndSub = <li class="selected">|</li> |*| <li class="selected">|</li> |*| <li class="selected last">|</li>
+		}
 
-    }
+	}
 }
