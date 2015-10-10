@@ -3,16 +3,16 @@ page {
 	typeNum = 0
 
 	includeCSS {
-		stylesheets = {$PATH.stylesheets}Build/styles{$PATH.productionMinifiedPostfix}.css
+		stylesheets = {$PATH.stylesheets}Styles{$PATH.productionMinifiedPostfix}.css
 		stylesheets.media = all
 	}
 
 	includeJSlibs {
-		headScripts = {$PATH.scripts}Build/headScripts{$PATH.productionMinifiedPostfix}.js
+		headScripts = {$PATH.scripts}HeadScripts{$PATH.productionMinifiedPostfix}.js
 	}
 
 	includeJSFooterlibs {
-		bodyScripts = {$PATH.scripts}Build/bodyScripts{$PATH.productionMinifiedPostfix}.js
+		bodyScripts = {$PATH.scripts}BodyScripts{$PATH.productionMinifiedPostfix}.js
 	}
 
 
@@ -66,36 +66,27 @@ page {
 
 	10 = FLUIDTEMPLATE
 	10 {
-		file.stdWrap.cObject = TEXT
+		#BE layouts
+		file.stdWrap.cObject = CASE
 		file.stdWrap.cObject {
-			data = levelfield:-2,backend_layout_next_level,slide
-			override.field = backend_layout
-			split {
-				token = file__
-				1.current = 1
-				1.wrap = |
-			}
-			wrap = {$PATH.privatePath}Templates/|.html
+			key.data = levelfield:-1,backend_layout_next_level,slide
+			key.override.field = backend_layout
+			default = TEXT
+			default.value = {$PATH.privatePath}Templates/mobile_home.html
+			2 = TEXT
+			2.value = {$PATH.privatePath}Templates/mobile_page.html
 		}
 		partialRootPath = {$PATH.privatePath}Partials/
 		layoutRootPath = {$PATH.privatePath}Layouts/
 
 		variables {
-		#cObjects werden direkt im Template mittels <f:cObject typoscriptObjectPath="lib.*" /> eingebunden
+			#cObjects werden direkt im Template mittels <f:cObject typoscriptObjectPath="lib.*" /> eingebunden
 
-			mainNavigation = TEXT
-			mainNavigation.value = {$site.id.mainNavigation}
-
-			mainContent = TEXT
-			mainContent.value = {$site.id.mainContent}
+			mainContent < styles.content.get
 
 			belayout = TEXT
 			belayout.data = levelfield:-1,backend_layout_next_level,slide
 			belayout.override.field = backend_layout
-
-			homeLinkUri = TEXT
-			homeLinkUri.typolink.parameter = {$PID.homepage}
-			homeLinkUri.typolink.returnLast = url
 		}
 	}
 }

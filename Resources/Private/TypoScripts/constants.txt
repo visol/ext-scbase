@@ -19,7 +19,7 @@ PATH {
 	images = {$PATH.publicPath}Images/
 
 	# cat=filepaths; type=string; label=Scripts folder path
-	scripts = {$PATH.publicPath}Scripts/
+	scripts = {$PATH.publicPath}JavaScripts/
 
 	productionMinifiedPostfix = .min
 }
