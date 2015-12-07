@@ -13,6 +13,7 @@ lib.scbase.menu.template {
 
 	1 = TMENU
 	1 {
+		noBlur = 1
 		wrap = <ul>|</ul>
 
 		# Always unfold all sub-levels of the menu
