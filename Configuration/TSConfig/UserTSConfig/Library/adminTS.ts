@@ -8,6 +8,6 @@ options {
 }
 
 # NO_CACHE = 1 !!!!! in AdmPanel
-admPanel {	
+admPanel {
 	override.tsdebug.forceTemplateParsing = 1
 }
