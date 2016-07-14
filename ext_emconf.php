@@ -25,14 +25,14 @@ $EM_CONF[$_EXTKEY] = array(
 	'version' => '0.0.1',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '6.2.6',
-			'extbase' => '6.2',
-			'fluid' => '6.2',
-			'scheduler' => '6.2',
-			'recycler' => '6.2',
-			'linkvalidator' => '6.2',
-			'realurl' => '1.12.8',
-			'caretaker_instance' => '0.5.0'
+			'typo3' => '6.2.6-7.6.99',
+			'extbase' => '6.2.0-7.6.99',
+			'fluid' => '6.2.0-7.6.99',
+			'scheduler' => '6.2.0-7.6.99',
+			'recycler' => '6.2.0-7.6.99',
+			'linkvalidator' => '6.2.0-7.6.99',
+			'realurl' => '1.12.8-2.9.99',
+			'caretaker_instance' => '0.5.0-0.9.99'
 		),
 		'conflicts' => array(
 		),
